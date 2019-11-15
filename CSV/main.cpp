@@ -10,7 +10,7 @@ struct SData {
 
 class TestTableDB : public CResTable<SData>
 {
-	virtual bool LoadLine(SLine line, SData& data)
+	virtual bool LoadLine(SLine& line, SData& data)
 	{
 		data.id = atoi(line["ID"]);
 		data.a = atoi(line["a"]);

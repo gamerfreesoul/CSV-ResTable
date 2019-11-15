@@ -14,7 +14,7 @@ public:
 	CResTable();
 	~CResTable();
 
-	virtual bool LoadLine(SLine line, T& data) = 0;
+	virtual bool LoadLine(SLine& line, T& data) = 0;
 	bool LoadTableBy_StringId(std::string filePath, std::string file);
 	bool LoadTableBy_Id(std::string filePath, std::string file);
 	T* Find(int nId);
